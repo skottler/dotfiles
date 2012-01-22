@@ -1,0 +1,5 @@
+set guioptions-=T
+set guioptions-=m
+color solarized
+set background=light
+set guifont=Monaco:h12
