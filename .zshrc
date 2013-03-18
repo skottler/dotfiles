@@ -25,7 +25,9 @@ function virt-sshfs() {
 }
 
 # ssh authentication component
-source ${HOME}/.gnupg/gpg-agent-wrapper
+if [ -e $HOME/.gnupg/gpg-agent-wrapper ]; then
+  source ${HOME}/.gnupg/gpg-agent-wrapper
+fi
 
 # virtualenvwrapper
 source virtualenvwrapper.sh
