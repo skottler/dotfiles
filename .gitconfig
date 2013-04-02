@@ -1,6 +1,6 @@
 [user]
 	name = Sam Kottler
-	email = shk@redhat.com
+    email = shk@redhat.com
 
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
