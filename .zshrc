@@ -29,6 +29,8 @@ if [ -e $HOME/.gnupg/gpg-agent-wrapper ]; then
   source ${HOME}/.gnupg/gpg-agent-wrapper
 fi
 
+alias kkoji="koji -c ~/.koji/katello-config"
+
 # virtualenvwrapper
 source virtualenvwrapper.sh
 
