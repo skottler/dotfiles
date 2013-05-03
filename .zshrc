@@ -9,8 +9,10 @@ export PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-source ~/.rvm/scripts/rvm
-rvm use 1.9.3 > /dev/null
+if [ -e ~/.rvm ]; then
+  source ~/.rvm/scripts/rvm
+  rvm use 1.9.3 > /dev/null
+fi
 
 function virt-ssh() {
   ssh root@$(sudo /usr/local/bin/virt-address $1)
