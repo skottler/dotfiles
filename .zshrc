@@ -7,11 +7,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/samkottler/.local/bin:/home/samkottler/bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$HOME/.rbenv/bin:$PATH
 
-if [ -e ~/.rvm ]; then
-  source ~/.rvm/scripts/rvm
-  rvm use 1.9.3 > /dev/null
+if [ -e ~/.rbenv ]; then
+  eval "$(rbenv init -)"
 fi
 
 function virt-ssh() {
