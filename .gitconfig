@@ -1,6 +1,6 @@
 [user]
 	name = Sam Kottler
-	email = shk@redhat.com
+	email = sam@kottlerdevelopment.com
 
 [alias]
 	# View the SHA, description, and history graph of the latest 20 commits
@@ -29,6 +29,7 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+    fixit = !"git commit -am 'NOTHING TO SEE HERE'" # Thanks for James Fryman for inspring my work.
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -36,7 +37,7 @@
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
@@ -86,3 +87,9 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = sam@kottlerdevelopment.com
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
