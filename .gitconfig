@@ -29,7 +29,7 @@
     reb = "!r() { git rebase -i HEAD~$1; }; r"
     # Undo a `git push`
     undopush = push -f origin HEAD^:master
-    fixit = !"git commit -am 'NOTHING TO SEE HERE'" # Thanks for James Fryman for inspring my work.
+    fixit = !"git commit -am 'NOTHING TO SEE HERE'" # Thanks to James Fryman for inspring my work.
 
 [apply]
     # Detect whitespace errors when applying a patch
