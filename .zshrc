@@ -25,9 +25,8 @@ function virt-sshfs() {
   sshfs -o nonempty root@$(sudo /usr/local/bin/virt-address $1):$2 ~/Documents/tmpfs
 }
 
-# ssh authentication component
-if [ -e $HOME/.gnupg/gpg-agent-wrapper ]; then
-  source ${HOME}/.gnupg/gpg-agent-wrapper
+if [ -e /opt/boxen ]; then
+  source /opt/boxen/env.sh
 fi
 
 alias kkoji="koji -c ~/.koji/katello-config"
