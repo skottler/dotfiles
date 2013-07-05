@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/samkottler/.local/bin:/home/samkottler/bin
 
-PATH=$HOME/.rbenv/bin:$PATH
+PATH=$HOME/.bin:$HOME/.rbenv/bin:$PATH
 
 if [ -e ~/.rbenv ]; then
   eval "$(rbenv init -)"
@@ -33,7 +33,9 @@ fi
 alias kkoji="koji -c ~/.koji/katello-config"
 
 # virtualenvwrapper
-source virtualenvwrapper.sh
+if [ -e /usr/bin/virtualenvwrapper.sh ]; then
+  source virtualenvwrapper.sh
+fi
 
 function eluminate() {
   LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/jvm/java/jre/lib/amd64 javaws $1
