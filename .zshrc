@@ -29,6 +29,9 @@ function gi() {
   gem install $1 && rbenv rehash
 }
 
+# Some aliases to make life easier or something.
+alias em="emacs -nw"
+
 if [ -e /opt/boxen ]; then
   source /opt/boxen/env.sh
 fi
