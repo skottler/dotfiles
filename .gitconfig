@@ -1,6 +1,7 @@
 [user]
     name = Sam Kottler
     email = shk@redhat.com
+    signingkey = E3775061
 
 [alias]
     # View the SHA, description, and history graph of the latest 20 commits

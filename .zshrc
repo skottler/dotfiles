@@ -25,6 +25,10 @@ function virt-sshfs() {
   sshfs -o nonempty root@$(sudo /usr/local/bin/virt-address $1):$2 ~/Documents/tmpfs
 }
 
+function gi() {
+  gem install $1 && rbenv rehash
+}
+
 if [ -e /opt/boxen ]; then
   source /opt/boxen/env.sh
 fi
