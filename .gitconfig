@@ -87,6 +87,3 @@
     smtpserverport = 587
     smtpencryption = tls
     smtpuser = sam@kottlerdevelopment.com
-
-[hub]
-protocol = https
