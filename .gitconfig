@@ -82,8 +82,3 @@
     insteadOf = "gist:"
 [push]
     default = matching
-[sendemail]
-    smtpserver = smtp.gmail.com
-    smtpserverport = 587
-    smtpencryption = tls
-    smtpuser = sam@kottlerdevelopment.com
