@@ -1,7 +1,7 @@
 cask_args app: "/Applications"
 
 # Taps
-tap "caskroom/cask"
+tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/services"
 
@@ -40,12 +40,11 @@ cask "docker"
 cask "dropbox"
 cask "google-chrome"
 cask "moom"
+cask "iterm2"
 cask "slack"
-cask "sonos"
 cask "spotify"
 cask "transmission"
 cask "vagrant"
-cask "virtualbox"
 cask "viscosity"
 cask "vmware-fusion"
 cask "zoomus"
