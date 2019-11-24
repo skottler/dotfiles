@@ -31,6 +31,7 @@ brew "terraform"
 brew "tig"
 brew "vim"
 brew "wget"
+brew "wireguard-tools"
 brew "xz"
 
 # Casks
