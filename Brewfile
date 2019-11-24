@@ -1,13 +1,10 @@
 cask_args app: "/Applications"
 
-# Taps
 tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/services"
 
-# Brews
 brew "ack"
-brew "ansible"
 brew "autoconf"
 brew "automake"
 brew "boost"
@@ -34,7 +31,6 @@ brew "wget"
 brew "wireguard-tools"
 brew "xz"
 
-# Casks
 cask "1password"
 cask "bartender"
 cask "docker"
