@@ -8,8 +8,6 @@
 .vagrant.d/
 .bash_history
 .bash_profile
-.gnupg/
-.gpg-agent-info
 .mysql_history
 .ssh/
 .subversion
