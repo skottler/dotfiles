@@ -1,12 +1,8 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="junkfood"
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export ZSH="/Users/skottler/.oh-my-zsh"
 
-plugins=(git)
+ZSH_THEME="robbyrussell"
+VSCODE=code
+plugins=(git golang vscode)
 
 source $ZSH/oh-my-zsh.sh
-
-PATH=$HOME/.bin:$HOME/.rbenv/bin:$PATH
-
-if [ -e ~/.rbenv ]; then
-  eval "$(rbenv init -)"
-fi
