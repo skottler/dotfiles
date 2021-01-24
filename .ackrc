@@ -1,9 +1,5 @@
---type-add=html=.html.erb,.haml,.slim
---type-add=js=.js.erb,.json
---type-add=css=.sass,.less,.scss
 --type-add=cpp=.cc,.cpp
 --type-add=c=.c,.h
---type-set=cucumber=.feature
 --type-set=markdown=.markdown,.mdown,.md,.mkd,.mkdn,.txt
 
 --ignore-dir=coverage
