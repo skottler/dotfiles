@@ -1,0 +1,32 @@
+# espanso configuration file
+
+matches:
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # Dates
+  - trigger: ":date_ref"
+    replace: "[[{{today}}]]"
+    vars:
+      - name: today
+        type: date
+        params:
+          format: "%B%e, %Y"
+
+  - trigger: ":t_ref"
+    replace: "[[{{tomorrow_date}}]]"
+    vars:
+      - name: tomorrow_date
+        type: date
+        params:
+          offset: 86400
+          format: "%B%e, %Y"
+
+  - trigger: ":y_ref"
+    replace: "[[{{yesterday_date}}]]"
+    vars:
+      - name: yesterday_date
+        type: date
+        params:
+          offset: -86400
+          format: "%B%e, %Y"
