@@ -1,7 +1,7 @@
 # espanso configuration file
 
 matches:
-  - trigger: ":date_ref"
+  - trigger: ":td"
     replace: "[[{{today}}]]"
     vars:
       - name: today
@@ -9,7 +9,7 @@ matches:
         params:
           format: "%B%e, %Y"
 
-  - trigger: ":t_ref"
+  - trigger: ":tm"
     replace: "[[{{tomorrow_date}}]]"
     vars:
       - name: tomorrow_date
@@ -18,7 +18,7 @@ matches:
           offset: 86400
           format: "%B%e, %Y"
 
-  - trigger: ":y_ref"
+  - trigger: ":yd"
     replace: "[[{{yesterday_date}}]]"
     vars:
       - name: yesterday_date
