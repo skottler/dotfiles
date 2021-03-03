@@ -1,10 +1,6 @@
 # espanso configuration file
 
 matches:
-  - trigger: ":espanso"
-    replace: "Hi there!"
-
-  # Dates
   - trigger: ":date_ref"
     replace: "[[{{today}}]]"
     vars:
