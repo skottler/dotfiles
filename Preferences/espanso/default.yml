@@ -26,3 +26,29 @@ matches:
         params:
           offset: -86400
           format: "%B%e, %Y"
+  
+  - trigger: ":tw"
+    replace: "[[week-{{todays_week}}]]"
+    vars:
+      - name: todays_week
+        type: date
+        params:
+          format: "%U"
+
+  - trigger: ":nw"
+    replace: "[[week-{{next_week}}]"
+    vars:
+      - name: next_week
+        type: date
+        params:
+          offset: 604800
+          format: "%U"
+
+  - trigger: ":lw"
+    replace: "[[week-{{last_week}}]]"
+    vars:
+      - name: last_week
+        type: date
+        params:
+          offset: -604800
+          format: "%U"
