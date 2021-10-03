@@ -40,7 +40,6 @@ brew "zlib"
 
 cask "1password"
 cask "bartender"
-cask "docker"
 cask "dropbox"
 cask "fantastical"
 cask "iterm2"
