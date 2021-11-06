@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 VSCODE=code
 plugins=(git golang vscode)
 
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 eval "$(rbenv init -)"
 
