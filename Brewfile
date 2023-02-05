@@ -44,6 +44,7 @@ brew "yarn"
 brew "zlib"
 
 cask "1password"
+cask "asana"
 cask "bartender"
 cask "cleanshot"
 cask "google-cloud-sdk"
