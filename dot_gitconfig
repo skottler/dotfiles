@@ -12,7 +12,7 @@
     # `git di $number` shows the diff between the state `$number` revisions ago and the current state
     di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
     # Pull in remote changes for the current repository and all its submodules
-    p = !"git pull; git submodule foreach git pull origin master"
+    p = !"git pull; git submodule foreach git pull origin main"
     # Clone a repository including all submodules
     c = clone --recursive
     # Commit all changes
@@ -28,7 +28,7 @@
     # Interactive rebase with the given number of latest commits
     reb = "!r() { git rebase -i HEAD~$1; }; r"
     # Undo a `git push`
-    undopush = push -f origin HEAD^:master
+    undopush = push -f origin HEAD^:main
 
 [apply]
     # Detect whitespace errors when applying a patch
