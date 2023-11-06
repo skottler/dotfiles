@@ -1,6 +1,7 @@
 [user]
     name = Sam Kottler
     email = sam@kottler.org
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHAHFSzgHiL58lEfHMZ9XvGz2IP7b6x9g9EQlRV4rHqz
 
 [alias]
     # View the SHA, description, and history graph of the latest 20 commits
@@ -83,3 +84,9 @@
     insteadOf = "gist:"
 [push]
     default = matching
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
