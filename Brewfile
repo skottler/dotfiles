@@ -40,23 +40,18 @@ brew "pkg-config"
 brew "ripgrep"
 brew "rustup"
 brew "shellcheck"
-<<<<<<< HEAD
-brew "terraform"
-brew "terragrunt"
 brew "tig"
 brew "tmux"
 brew "vim"
 brew "wget"
 brew "xz"
 brew "yarn"
-=======
 brew "tig"
 brew "tmux"
 brew "wget"
 brew "xz"
 brew "yq"
 brew "zlib"
->>>>>>> 3159b3a (update the apps in use)
 
 cask "alacritty"
 cask "bartender"
